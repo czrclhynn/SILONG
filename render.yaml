@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: silong-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: CORS_ORIGINS
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false

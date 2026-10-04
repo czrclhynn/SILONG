@@ -1,0 +1,13 @@
+{
+  "source": "Philippine Statistics Authority — 2020 Census of Population and Housing, reproduced in Makati City in Figures 2022",
+  "source_url": "https://rssoncr.psa.gov.ph/sites/default/files/CIF%20CITY%20OF%20MAKATI%202022.pdf",
+  "reference_date": "2020-05-01",
+  "expected_ncr_total": 13484462,
+  "note": "Historical population baseline, not a 2025 estimate. Original census geography predates subsequent Makati/Taguig administrative changes. Map geometry is a generalized historical reference; do not interpret it as current legal boundaries.",
+  "populations": {
+    "Caloocan":1661584,"Las Piñas":606293,"Makati":629616,"Malabon":380522,
+    "Mandaluyong":425758,"Manila":1846513,"Marikina":456059,"Muntinlupa":543445,
+    "Navotas":247543,"Parañaque":689992,"Pasay":440656,"Pasig":803159,
+    "Pateros":65227,"Quezon City":2960048,"San Juan":126347,"Taguig":886722,"Valenzuela":714978
+  }
+}

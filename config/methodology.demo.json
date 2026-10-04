@@ -1,0 +1,16 @@
+{
+  "version": "silong-demo-v1",
+  "dataset_label": "Synthetic demonstration data — not official observations.",
+  "timezone": "Asia/Manila",
+  "weights": {"heat": 0.25, "population_density": 0.25, "built_up": 0.25, "vegetation_deficit": 0.25},
+  "weight_rationale": "Equal weighting is an explicit uncalibrated demonstration convention: no component is privileged without empirical or stakeholder evidence. This is a sensitivity-analysis score, not a validated risk predictor. Replace weights after external validation.",
+  "normalization": {"heat": [27, 54], "population_density": [0, 50000], "built_up": [0, 100], "vegetation_deficit": [0, 100]},
+  "risk_thresholds": [{"label":"Low","min":0,"color":"#f6dc92"},{"label":"Moderate","min":35,"color":"#f8b75d"},{"label":"High","min":50,"color":"#ed8641"},{"label":"Very High","min":65,"color":"#d95036"},{"label":"Extreme","min":80,"color":"#9c2f32"}],
+  "elevated_min": 50,
+  "exposure_method": "Assign the entire synthetic residential population of each city to its city-level analytical category. Sum populations once per selected timestamp. This is geographic co-location, not an estimate of personal heat dose or the number of affected individuals.",
+  "heat_index_source": "https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml",
+  "heat_index_method": "NWS Rothfusz regression in Fahrenheit, with the preliminary simple formula and low/high humidity adjustments. Convert to Celsius. Shaded, light-wind conditions; not surface temperature or a medical risk model.",
+  "simulation_method": "Recalculate heat index from changed air temperature and humidity; recalculate the fixed-normalization weighted index from changed density, vegetation and built-up coverage. Vegetation does not automatically lower temperature: no causal cooling coefficient is assumed. Population changes with density at fixed area. Elevated population is the whole scenario city population only when its score meets the configured elevated threshold.",
+  "limitations": ["Synthetic measurements demonstrate software and cannot describe actual Metro Manila conditions.","City-level values hide neighborhood variation.","Population is synthetic residential population, not daytime mobility.","Equal weights and thresholds are uncalibrated demonstration choices.","Heat exposure is not individual health risk or an official warning.","Forecast evaluation on synthetic data does not establish real-world forecast skill.","Scenario relationships are mathematical assumptions, not causal predictions.","Boundaries are generalized 2023 reference geometry; not for legal use."]
+}
+

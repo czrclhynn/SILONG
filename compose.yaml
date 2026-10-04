@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_DB: silong
+      POSTGRES_USER: silong
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-silong}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./database/migrations:/docker-entrypoint-initdb.d:ro
+volumes:
+  postgres:

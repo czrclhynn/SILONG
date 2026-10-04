@@ -1,0 +1,9 @@
+.venv
+frontend/node_modules
+frontend/.next
+frontend/out
+.git
+.env
+backend/data/candidates
+test-results
+artifacts

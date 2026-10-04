@@ -1,0 +1,38 @@
+{
+  "version": "era5land-2025-psa2020-v1",
+  "provenance": "reanalysis",
+  "fetched_at": "2026-10-04T04:55:48.122120+00:00",
+  "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=14.74782%2C14.42153%2C14.55682%2C14.66016%2C14.57901%2C14.59213%2C14.64808%2C14.42153%2C14.66450%2C14.48510%2C14.54319%2C14.60402%2C14.54232%2C14.68132%2C14.59822%2C14.51861%2C14.71485&longitude=121.04187%2C121.00315%2C121.03134%2C120.96614%2C121.04824%2C120.98950%2C121.09890%2C121.03516%2C120.94384%2C121.01418%2C120.99577%2C121.07765%2C121.06899%2C121.06371%2C121.03301%2C121.06126%2C120.98575&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m%2Crelative_humidity_2m&models=era5_land&timezone=Asia%2FManila",
+  "weather_provider": "Open-Meteo / Copernicus ERA5-Land",
+  "weather_license": "CC BY 4.0",
+  "weather_resolution": "0.1 degree (~11 km); downscaled point samples, not citywide station observations",
+  "raw_sha256": "ebfe6ff9d09fe482ee6d0df9f9f62ef09ae27452da29934a7a71fd6580713ff4",
+  "population_source": {
+    "source": "Philippine Statistics Authority \u2014 2020 Census of Population and Housing, reproduced in Makati City in Figures 2022",
+    "source_url": "https://rssoncr.psa.gov.ph/sites/default/files/CIF%20CITY%20OF%20MAKATI%202022.pdf",
+    "reference_date": "2020-05-01",
+    "expected_ncr_total": 13484462,
+    "note": "Historical population baseline, not a 2025 estimate. Original census geography predates subsequent Makati/Taguig administrative changes. Map geometry is a generalized historical reference; do not interpret it as current legal boundaries.",
+    "populations": {
+      "Caloocan": 1661584,
+      "Las Pi\u00f1as": 606293,
+      "Makati": 629616,
+      "Malabon": 380522,
+      "Mandaluyong": 425758,
+      "Manila": 1846513,
+      "Marikina": 456059,
+      "Muntinlupa": 543445,
+      "Navotas": 247543,
+      "Para\u00f1aque": 689992,
+      "Pasay": 440656,
+      "Pasig": 803159,
+      "Pateros": 65227,
+      "Quezon City": 2960048,
+      "San Juan": 126347,
+      "Taguig": 886722,
+      "Valenzuela": 714978
+    }
+  },
+  "unique_grid_points": 6,
+  "environmental_data": "Not available; never filled with synthetic values"
+}

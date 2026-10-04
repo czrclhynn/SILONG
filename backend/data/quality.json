@@ -1,0 +1,13 @@
+{
+  "records_processed": 148920,
+  "missing_values": 0,
+  "invalid_observations": 0,
+  "duplicates_removed": 0,
+  "outliers_flagged": 0,
+  "records_retained": 148920,
+  "missing_policy": "Reject missing required measurements; no interpolation or backfill.",
+  "dataset_version": "silong-demo-v1",
+  "last_dataset_update": "2026-09-30 23:00:00+08:00",
+  "expected_records": 148920,
+  "coverage_percent": 100
+}

@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+tsconfig.tsbuildinfo
+test-results/
+playwright-report/
+.sites-runtime/

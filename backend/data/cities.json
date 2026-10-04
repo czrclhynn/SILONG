@@ -1,0 +1,172 @@
+[
+  {
+    "city_id": "1380100000",
+    "name": "Caloocan",
+    "population": 706190,
+    "population_density": 13262,
+    "vegetation": 25.9,
+    "built_up": 70.4,
+    "provenance": "synthetic",
+    "area_km2": 53.249137
+  },
+  {
+    "city_id": "1380200000",
+    "name": "Las Pi\u00f1as",
+    "population": 653996,
+    "population_density": 19967,
+    "vegetation": 17.9,
+    "built_up": 81.1,
+    "provenance": "synthetic",
+    "area_km2": 32.753856
+  },
+  {
+    "city_id": "1380300000",
+    "name": "Makati",
+    "population": 965899,
+    "population_density": 38680,
+    "vegetation": 13.0,
+    "built_up": 76.5,
+    "provenance": "synthetic",
+    "area_km2": 24.971532
+  },
+  {
+    "city_id": "1380400000",
+    "name": "Malabon",
+    "population": 275079,
+    "population_density": 17440,
+    "vegetation": 35.1,
+    "built_up": 85.4,
+    "provenance": "synthetic",
+    "area_km2": 15.772894
+  },
+  {
+    "city_id": "1380500000",
+    "name": "Mandaluyong",
+    "population": 331092,
+    "population_density": 29255,
+    "vegetation": 29.1,
+    "built_up": 72.0,
+    "provenance": "synthetic",
+    "area_km2": 11.317443
+  },
+  {
+    "city_id": "1380600000",
+    "name": "Manila",
+    "population": 1507169,
+    "population_density": 35906,
+    "vegetation": 20.6,
+    "built_up": 66.2,
+    "provenance": "synthetic",
+    "area_km2": 41.975413
+  },
+  {
+    "city_id": "1380700000",
+    "name": "Marikina",
+    "population": 383639,
+    "population_density": 16726,
+    "vegetation": 14.3,
+    "built_up": 72.4,
+    "provenance": "synthetic",
+    "area_km2": 22.936689
+  },
+  {
+    "city_id": "1380800000",
+    "name": "Muntinlupa",
+    "population": 865231,
+    "population_density": 22081,
+    "vegetation": 26.6,
+    "built_up": 55.4,
+    "provenance": "synthetic",
+    "area_km2": 39.184402
+  },
+  {
+    "city_id": "1380900000",
+    "name": "Navotas",
+    "population": 238991,
+    "population_density": 22669,
+    "vegetation": 18.2,
+    "built_up": 61.4,
+    "provenance": "synthetic",
+    "area_km2": 10.542653
+  },
+  {
+    "city_id": "1381000000",
+    "name": "Para\u00f1aque",
+    "population": 1247535,
+    "population_density": 27820,
+    "vegetation": 20.2,
+    "built_up": 64.9,
+    "provenance": "synthetic",
+    "area_km2": 44.843099
+  },
+  {
+    "city_id": "1381100000",
+    "name": "Pasay",
+    "population": 256377,
+    "population_density": 14329,
+    "vegetation": 32.5,
+    "built_up": 81.3,
+    "provenance": "synthetic",
+    "area_km2": 17.892175
+  },
+  {
+    "city_id": "1381200000",
+    "name": "Pasig",
+    "population": 884067,
+    "population_density": 28234,
+    "vegetation": 17.7,
+    "built_up": 86.2,
+    "provenance": "synthetic",
+    "area_km2": 31.312129
+  },
+  {
+    "city_id": "1381701000",
+    "name": "Pateros",
+    "population": 43009,
+    "population_density": 26718,
+    "vegetation": 20.1,
+    "built_up": 84.7,
+    "provenance": "synthetic",
+    "area_km2": 1.609737
+  },
+  {
+    "city_id": "1381300000",
+    "name": "Quezon City",
+    "population": 2953320,
+    "population_density": 18176,
+    "vegetation": 27.5,
+    "built_up": 65.4,
+    "provenance": "synthetic",
+    "area_km2": 162.484613
+  },
+  {
+    "city_id": "1381400000",
+    "name": "San Juan",
+    "population": 93370,
+    "population_density": 16154,
+    "vegetation": 27.6,
+    "built_up": 62.5,
+    "provenance": "synthetic",
+    "area_km2": 5.78001
+  },
+  {
+    "city_id": "1381500000",
+    "name": "Taguig",
+    "population": 861900,
+    "population_density": 24258,
+    "vegetation": 24.2,
+    "built_up": 61.2,
+    "provenance": "synthetic",
+    "area_km2": 35.530535
+  },
+  {
+    "city_id": "1381600000",
+    "name": "Valenzuela",
+    "population": 1517858,
+    "population_density": 32593,
+    "vegetation": 23.4,
+    "built_up": 75.5,
+    "provenance": "synthetic",
+    "area_km2": 46.570063
+  }
+]

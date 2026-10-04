@@ -1,0 +1,680 @@
+{
+  "registry": {
+    "selected": "Gradient boosting",
+    "version": "silong-direct-v1",
+    "trained_at": "2026-10-04T04:58:15.661876+00:00",
+    "dataset_version": "era5land-2025-psa2020-v1",
+    "features": [
+      "temperature",
+      "humidity",
+      "heat_index",
+      "temperature_lag1",
+      "humidity_lag1",
+      "heat_index_lag24",
+      "temperature_rolling24",
+      "humidity_rolling24",
+      "hour_sin",
+      "hour_cos",
+      "season_sin",
+      "season_cos"
+    ],
+    "validation_period": "2025-10-01 to 2025-11-30",
+    "test_period": "2025-12-01 to 2025-12-31",
+    "train_period": "2025-01-01 to 2025-09-30",
+    "metrics": [
+      {
+        "model": "Persistence",
+        "mae": 3.1376183644189384,
+        "rmse": 4.054200436148981,
+        "r2": -0.9532648119514422,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "model": "Linear regression",
+        "mae": 1.2581511564724082,
+        "rmse": 1.570190943513027,
+        "r2": 0.7070080889233887,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "model": "Random forest",
+        "mae": 0.8873651449797944,
+        "rmse": 1.264195315115654,
+        "r2": 0.8100763502850518,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "model": "Gradient boosting",
+        "mae": 0.8843604329059105,
+        "rmse": 1.2241123467660056,
+        "r2": 0.8219289780881327,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    ],
+    "validation_metrics": {
+      "6": {
+        "Persistence": {
+          "mae": 3.7162236746550477,
+          "rmse": 4.702147832499859,
+          "r2": -0.895370105853875
+        },
+        "Linear regression": {
+          "mae": 1.485392784395822,
+          "rmse": 1.958643680644984,
+          "r2": 0.6711390249937884
+        },
+        "Random forest": {
+          "mae": 1.3296230897549504,
+          "rmse": 1.8455348762402206,
+          "r2": 0.7080247881827706
+        },
+        "Gradient boosting": {
+          "mae": 1.2245075111829977,
+          "rmse": 1.7177782208030263,
+          "r2": 0.7470494354782682
+        }
+      },
+      "12": {
+        "Persistence": {
+          "mae": 5.3674914924647545,
+          "rmse": 5.896162529281767,
+          "r2": -1.982118069461952
+        },
+        "Linear regression": {
+          "mae": 1.458752648216047,
+          "rmse": 1.9405104245499125,
+          "r2": 0.676988561682544
+        },
+        "Random forest": {
+          "mae": 1.471785229171283,
+          "rmse": 1.98590285936982,
+          "r2": 0.6617000422240412
+        },
+        "Gradient boosting": {
+          "mae": 1.3468975894260347,
+          "rmse": 1.8689500612554744,
+          "r2": 0.7003727312284406
+        }
+      },
+      "24": {
+        "Persistence": {
+          "mae": 1.4073774509803922,
+          "rmse": 2.1084349274135197,
+          "r2": 0.618803330588316
+        },
+        "Linear regression": {
+          "mae": 1.4409872764209712,
+          "rmse": 2.0148207401509395,
+          "r2": 0.6519020071794739
+        },
+        "Random forest": {
+          "mae": 1.4876403663994044,
+          "rmse": 2.035761788941286,
+          "r2": 0.6446284876805093
+        },
+        "Gradient boosting": {
+          "mae": 1.4411254263213416,
+          "rmse": 1.9762259672341704,
+          "r2": 0.6651102180526928
+        }
+      }
+    },
+    "feature_importance": [
+      {
+        "feature": "hour_sin",
+        "importance": 1.7090204427036564
+      },
+      {
+        "feature": "heat_index",
+        "importance": 0.7488643787469907
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.1549436516294113
+      },
+      {
+        "feature": "temperature_rolling24",
+        "importance": 0.08279443991195105
+      },
+      {
+        "feature": "humidity",
+        "importance": 0.055776011829948256
+      },
+      {
+        "feature": "humidity_lag1",
+        "importance": 0.016555541675985646
+      },
+      {
+        "feature": "humidity_rolling24",
+        "importance": 0.009646391761818732
+      },
+      {
+        "feature": "temperature_lag1",
+        "importance": 0.000667980690718902
+      },
+      {
+        "feature": "heat_index_lag24",
+        "importance": -0.0012591078293557139
+      },
+      {
+        "feature": "season_sin",
+        "importance": -0.0026209477699354147
+      },
+      {
+        "feature": "temperature",
+        "importance": -0.0039093873329324085
+      },
+      {
+        "feature": "season_cos",
+        "importance": -0.013105733482892049
+      }
+    ],
+    "horizon_metrics": [
+      {
+        "horizon": 6,
+        "mae": 0.8843604329059105,
+        "rmse": 1.2241123467660056,
+        "r2": 0.8219289780881327,
+        "coverage": 0.9679579148732664,
+        "n_test": 2091,
+        "interval_half_width": 2.863313551673322
+      },
+      {
+        "horizon": 12,
+        "mae": 0.9983995997966688,
+        "rmse": 1.3245184300119233,
+        "r2": 0.7926779459562052,
+        "coverage": 0.9681774349083896,
+        "n_test": 2074,
+        "interval_half_width": 3.111206418012643
+      },
+      {
+        "horizon": 24,
+        "mae": 1.0916284883864575,
+        "rmse": 1.5220047832612755,
+        "r2": 0.7168179983433702,
+        "coverage": 0.9348039215686275,
+        "n_test": 2040,
+        "interval_half_width": 3.208973249877907
+      }
+    ],
+    "selection": "Lowest mean validation MAE across 6, 12, 24 hours. Models trained only on training period. Test set is never used for model selection.",
+    "interval_method": "Symmetric 90th percentile of absolute validation residuals per horizon; empirical, not calibrated real-world confidence. Coverage is measured on the held-out test set.",
+    "issue_time": "2025-12-31 23:00:00+08:00",
+    "sampling": "Every sixth training/validation/test row within time-ordered city series; no shuffle.",
+    "provenance": "reanalysis"
+  },
+  "predictions": [
+    {
+      "city_id": "1380100000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380200000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.054529998966963,
+      "lower": 22.19121644729364,
+      "upper": 27.917843550640285,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380300000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380400000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 26.046922826051613,
+      "lower": 23.18360927437829,
+      "upper": 28.910236377724935,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380500000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.266489936841676,
+      "lower": 22.403176385168354,
+      "upper": 28.129803488514998,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380600000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380700000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380800000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.105724400620094,
+      "lower": 22.242410848946772,
+      "upper": 27.969037952293416,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380900000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 26.046922826051613,
+      "lower": 23.18360927437829,
+      "upper": 28.910236377724935,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381000000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.21024052670531,
+      "lower": 22.346926975031987,
+      "upper": 28.07355407837863,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381100000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381200000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381300000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.18773176332196,
+      "lower": 22.324418211648638,
+      "upper": 28.05104531499528,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381400000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.37100606292689,
+      "lower": 22.50769251125357,
+      "upper": 28.234319614600214,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381500000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.21024052670531,
+      "lower": 22.346926975031987,
+      "upper": 28.07355407837863,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381600000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.454662766144537,
+      "lower": 22.591349214471215,
+      "upper": 28.31797631781786,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381701000",
+      "horizon": 6,
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "heat_index": 25.21024052670531,
+      "lower": 22.346926975031987,
+      "upper": 28.07355407837863,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380100000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.52593163461195,
+      "lower": 27.414725216599308,
+      "upper": 33.63713805262459,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380200000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 29.57399311651647,
+      "lower": 26.462786698503827,
+      "upper": 32.68519953452911,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380300000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.52593163461195,
+      "lower": 27.414725216599308,
+      "upper": 33.63713805262459,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380400000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.807100098663874,
+      "lower": 27.69589368065123,
+      "upper": 33.918306516676516,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380500000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.423316567814943,
+      "lower": 27.3121101498023,
+      "upper": 33.534522985827586,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380600000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.587265607097752,
+      "lower": 27.47605918908511,
+      "upper": 33.6984720251104,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380700000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.778670543149314,
+      "lower": 27.66746412513667,
+      "upper": 33.88987696116196,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380800000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 29.57399311651647,
+      "lower": 26.462786698503827,
+      "upper": 32.68519953452911,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380900000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.807100098663874,
+      "lower": 27.69589368065123,
+      "upper": 33.918306516676516,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381000000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 29.951588735714164,
+      "lower": 26.840382317701522,
+      "upper": 33.06279515372681,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381100000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.52593163461195,
+      "lower": 27.414725216599308,
+      "upper": 33.63713805262459,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381200000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.778670543149314,
+      "lower": 27.66746412513667,
+      "upper": 33.88987696116196,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381300000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.66168100031412,
+      "lower": 27.550474582301476,
+      "upper": 33.77288741832676,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381400000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.52593163461195,
+      "lower": 27.414725216599308,
+      "upper": 33.63713805262459,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381500000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.386372880845826,
+      "lower": 27.275166462833184,
+      "upper": 33.49757929885847,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381600000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.807100098663874,
+      "lower": 27.69589368065123,
+      "upper": 33.918306516676516,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381701000",
+      "horizon": 12,
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "heat_index": 30.386372880845826,
+      "lower": 27.275166462833184,
+      "upper": 33.49757929885847,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380100000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.75155720820274,
+      "lower": 22.542583958324833,
+      "upper": 28.960530458080648,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380200000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.206680108368136,
+      "lower": 21.99770685849023,
+      "upper": 28.415653358246043,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380300000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.315325983433272,
+      "lower": 22.106352733555365,
+      "upper": 28.52429923331118,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380400000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 26.09718406865092,
+      "lower": 22.888210818773015,
+      "upper": 29.30615731852883,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380500000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.315325983433272,
+      "lower": 22.106352733555365,
+      "upper": 28.52429923331118,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380600000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.346118261816766,
+      "lower": 22.13714501193886,
+      "upper": 28.555091511694673,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380700000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.66968658017845,
+      "lower": 22.460713330300543,
+      "upper": 28.878659830056357,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380800000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.206680108368136,
+      "lower": 21.99770685849023,
+      "upper": 28.415653358246043,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1380900000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 26.09718406865092,
+      "lower": 22.888210818773015,
+      "upper": 29.30615731852883,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381000000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.206680108368136,
+      "lower": 21.99770685849023,
+      "upper": 28.415653358246043,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381100000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.315325983433272,
+      "lower": 22.106352733555365,
+      "upper": 28.52429923331118,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381200000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.66968658017845,
+      "lower": 22.460713330300543,
+      "upper": 28.878659830056357,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381300000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.029487201972618,
+      "lower": 21.82051395209471,
+      "upper": 28.238460451850525,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381400000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.315325983433272,
+      "lower": 22.106352733555365,
+      "upper": 28.52429923331118,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381500000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.563292636984034,
+      "lower": 22.354319387106127,
+      "upper": 28.77226588686194,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381600000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.833846971390457,
+      "lower": 22.62487372151255,
+      "upper": 29.042820221268364,
+      "risk": "Low"
+    },
+    {
+      "city_id": "1381701000",
+      "horizon": 24,
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "heat_index": 25.563292636984034,
+      "lower": 22.354319387106127,
+      "upper": 28.77226588686194,
+      "risk": "Low"
+    }
+  ]
+}
